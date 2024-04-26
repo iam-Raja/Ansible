@@ -2,9 +2,9 @@
   hosts: localhost
   vars: #variables declaration
    team: "mumbai"
-   name: "rohit"
+   player: "rohit"
    no: "45"
   tasks:
   - name: print from vars
     ansible.builtin.debug:
-     print: "Hi, this is{{name}} from team {{team}} and jersy number {{no}}.""   
+     msg: "This is {{player}}"
