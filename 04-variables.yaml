@@ -1,5 +1,5 @@
 - name: variables playbook
-  host: localhost
+  hosts: localhost
   vars: #variables declaration
    team: mumbai
    name: rohit
