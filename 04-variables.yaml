@@ -7,4 +7,5 @@
   tasks:
    - name: print from vars
      ansible.builtin.debug:
-      print: hi, this is{{name}} from team {{team}} and jersy number {{no}}      #variables refering
+      print: "Hi, this is{{name}} from team {{team}} and jersy number {{no}}""     
+      
