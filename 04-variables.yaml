@@ -5,7 +5,7 @@
    name: "rohit"
    no: "45"
   tasks:
-   - name: print from vars
-     ansible.builtin.debug:
+  - name: print from vars
+    ansible.builtin.debug:
       print: "Hi, this is{{name}} from team {{team}} and jersy number {{no}}""     
       
