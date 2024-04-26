@@ -7,4 +7,4 @@
   tasks:
   - name: print from vars
     ansible.builtin.debug:
-     msg: "This is {{Player}}"
+     msg: "This is {{Player}} of Jersy no:{{No}} from team:{{Team}}"
