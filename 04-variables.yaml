@@ -3,7 +3,7 @@
   vars: #variables declaration
    team: "mumbai"
    name: "rohit"
-   no: 45
+   no: "45"
   tasks:
    - name: print from vars
      ansible.builtin.debug:
