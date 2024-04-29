@@ -14,5 +14,5 @@
       vars:
         declare: "I am from task"
       ansible.builtin.debug:
-        output: You are from {{declare}}
+        msg: You are from {{declare}}
 
