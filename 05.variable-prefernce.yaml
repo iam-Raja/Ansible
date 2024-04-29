@@ -11,8 +11,8 @@
       private: false
   tasks:
     - name: checking prefernce
-      vars:
-        declare: I am from task
+      # vars:
+      #   declare: I am from task
       ansible.builtin.debug:
         msg: You are from {{declare}}
 
