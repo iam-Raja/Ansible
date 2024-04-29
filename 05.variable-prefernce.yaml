@@ -1,0 +1,16 @@
+- name: variable preference
+  task: localhost
+  vars:
+   declare: "I am from play"
+  vars_file:
+   -vars.yaml
+  vars_prompt:
+  - name: declare
+    prompt: Enter your msg
+    private: false
+  tasks:
+  - name: checking prefernce
+    vars: 
+     declare: "I am from task"
+    ansible.builtin.debig:
+     output: "You are from {{declare}}"      
