@@ -1,6 +1,6 @@
 #ansible   
 - name: variable preference
-  hosts: localhost
+  hosts: web
   vars:
     declare: "I am from play"
   vars_files:
