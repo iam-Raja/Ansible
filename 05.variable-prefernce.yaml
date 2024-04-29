@@ -1,16 +1,18 @@
+#ansible   
 - name: variable preference
   hosts: localhost
   vars:
-   declare: "I am from play"
+    declare: I am from play
   vars_files:
-  - vars.yaml
+    - vars.yaml
   vars_prompt:
-  - name: declare
-    prompt: Enter your msg
-    private: false
+    - name: declare
+      prompt: Enter your msg
+      private: false
   tasks:
-  - name: checking prefernce
-    vars: 
-     declare: "I am from task"
-    ansible.builtin.debug:
-     output: "You are from {{declare}}"      
+    - name: checking prefernce
+      vars:
+        declare: I am from task
+      ansible.builtin.debug:
+        output: You are from {{declare}}
+
