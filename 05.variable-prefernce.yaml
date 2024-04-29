@@ -1,5 +1,5 @@
 - name: variable preference
-  task: localhost
+  hosts: localhost
   vars:
    declare: "I am from play"
   vars_file:
@@ -12,5 +12,5 @@
   - name: checking prefernce
     vars: 
      declare: "I am from task"
-    ansible.builtin.debig:
+    ansible.builtin.debug:
      output: "You are from {{declare}}"      
