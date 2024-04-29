@@ -4,7 +4,7 @@
   vars:
     declare: "I am from play"
   vars_files:
-    - vars.yaml
+  - vars.yaml
   vars_prompt:
     - name: declare
       prompt: Enter your msg
