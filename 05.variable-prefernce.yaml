@@ -2,7 +2,7 @@
 - name: variable preference
   hosts: web
   vars:
-    declare: "I am from play"
+    declare: I am from play
   vars_files:
   - vars.yaml
   vars_prompt:
@@ -12,7 +12,7 @@
   tasks:
     - name: checking prefernce
       vars:
-        declare: "I am from task"
+        declare: I am from task
       ansible.builtin.debug:
-        msg: You are from {{declare}}
+        msg: You are from {{declare}}::
 
