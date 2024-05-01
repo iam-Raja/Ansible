@@ -7,7 +7,6 @@
   - name: print info
     ansible.builtin.debug:
      msg: "Hi iam from {{place}}, {{city}}"
-
   - name: print info
     vars:
       place: "texas"
