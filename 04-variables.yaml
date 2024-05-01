@@ -1,10 +1,10 @@
 - name: variables playbook
   hosts: localhost
   vars: #variables declaration
-   team: "mumbai"
+   #team: "mumbai"
    Player: "rohit"
    No: "45"
   tasks:
   - name: print from vars
     ansible.builtin.debug:
-     msg: "This is {{Player}} of Jersey:{{No}} from :{{team}}"
+     msg: "This is {{Player}} of Jersey:{{No}}"
