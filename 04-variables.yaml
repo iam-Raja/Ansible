@@ -1,10 +1,11 @@
-- name: variables playbook
+- name: variables 
   hosts: localhost
-  vars: 
-    team: "mumbai"
-    Player: "rohit"
-    No: "45"
+  vars:
+    place: "newyork"
+    city: "manhatton"
   tasks:
-  - name: print from vars
+  - name: print info
     ansible.builtin.debug:
-     msg: "This is {{Player}} of Jersey:{{No}}"
+     msg: "Hi iam from {{place}}, {{city}}"
+      
+       
