@@ -1,8 +1,8 @@
-- name: variables 
+- name: variables from inventory
   hosts: localhost
   tasks:
-  - name: print info
+  - name: print info  
     ansible.builtin.debug:
-     msg: "Hi iam from {{place}}, {{city}}"
+      msg: "Hi iam from {{place}}, {{city}}"
       
        
