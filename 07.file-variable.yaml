@@ -1,0 +1,10 @@
+- name: variables 
+  hosts: localhost
+  vars:
+  - vars.yaml
+  tasks:
+  - name: print info
+    ansible.builtin.debug:
+     msg: "Hi iam from {{place}}, {{city}}"
+      
+       
