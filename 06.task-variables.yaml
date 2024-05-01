@@ -5,13 +5,14 @@
     city: "manhatton"
   tasks:
   - name: print info
-    ansible.builtin.debug:
-     msg: "Hi iam from {{place}}, {{city}}"
-  - name: print info
     vars:
       place: "texas"
       city: "dallas"
     ansible.builtin.debug:
-     msg: "Hi iam from {{place}}, {{city}}"   
+     msg: "Hi iam from {{place}}, {{city}}" 
+  - name: print info
+    ansible.builtin.debug:
+     msg: "Hi iam from {{place}}, {{city}}"
+  
       
        
