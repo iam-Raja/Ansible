@@ -5,7 +5,7 @@
     city: "manhatton"
   tasks:
   - name: print info
-    ansible.builtin.debug:
+    debug:
      msg: "Hi iam from {{place}}, {{city}}"
       
        
