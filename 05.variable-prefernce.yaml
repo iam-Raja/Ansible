@@ -3,8 +3,8 @@
   hosts: web
   vars:
     declare: "I am from play"
-  vars_files:
-  - vars.file
+  # vars_files:
+  # - vars.file
   vars_prompt:
     - name: declare
       prompt: Enter your msg
@@ -19,3 +19,4 @@
 #variables prefer order
 #args
 #task
+#file
