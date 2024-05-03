@@ -1,0 +1,16 @@
+- name: data-types
+  hosts: localhost
+  vars: 
+   course: "Devops with aws"
+   Tools:
+    - AWS
+    - Docker
+    - K8'S
+   Experience:
+    aws: 3
+    docker: 2
+    k8's: 1
+  tasks:
+  - name: print info
+    debug:
+     msg: "Hi course:{{course}} with tools:{{Tools}} and exp:{{Experience}}"   
