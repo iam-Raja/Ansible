@@ -1,0 +1,6 @@
+- name: variables from arguments
+  hosts: localhost
+  tasks: 
+  - name : print info
+    debug:
+      msg: "hi iam from {{team}} :{{role}}""
