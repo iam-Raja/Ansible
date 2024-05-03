@@ -4,7 +4,7 @@
   tasks: 
   - name: check user expense exist or not
     ansible.builtin.command: id expense #checking the expense user with shell cmd
-    
+
   - name: checkig after error
     ansible.buitlin.debug:
-     msg: "after user check"  
+      msg: "after user check"  
