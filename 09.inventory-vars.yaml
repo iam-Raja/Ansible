@@ -4,13 +4,6 @@
   - name: print info  
     ansible.builtin.debug:
       msg: "Hi iam from {{place}}, {{city}}"
-# - name: variables from inventory
-#   hosts: localhost
-#   tasks:
-#   - name: print information
-#     vars:
-#       timings: "07:15AM IST"
-#     ansible.builtin.debug:
-#       msg: "Hi, We are learning {{Course}}  {{timings}}"
+
       
        
