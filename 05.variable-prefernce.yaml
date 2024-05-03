@@ -4,15 +4,15 @@
   vars:
     declare: "I am from play"
   vars_files:
-  - vars.yaml
+  - vars.file
   vars_prompt:
     - name: declare
       prompt: Enter your msg
       private: false
   tasks:
     - name: checking prefernce
-      # vars:
-      #   declare: I am from task
+      vars:
+        declare: I am from task
       ansible.builtin.debug:
         msg: You are from {{declare}}
 
