@@ -1,8 +1,8 @@
 #ansible   
 - name: variable preference
   hosts: web
-  vars:
-    declare: "I am from play"
+  # vars:
+  #   declare: "I am from play"
   # vars_files:
   # - vars.file
   # vars_prompt:
