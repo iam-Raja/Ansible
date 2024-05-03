@@ -5,10 +5,10 @@
     declare: "I am from play"
   # vars_files:
   # - vars.file
-  vars_prompt:
-    - name: declare
-      prompt: Enter your msg
-      private: false
+  # vars_prompt:
+  #   - name: declare
+  #     prompt: Enter your msg
+  #     private: false
   tasks:
     - name: checking prefernce
       # vars:
