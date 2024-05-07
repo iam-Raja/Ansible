@@ -3,7 +3,7 @@
   tasks:
   - name: print default value
     ansible.builtin.debug:
-      msg: "the value {{team | default('mumbai')}}"
+      msg: "the value {{team | default ('mumbai')}}"
 - name: uppercase
   hosts: localhost
   vars:
