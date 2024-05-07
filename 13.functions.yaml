@@ -9,3 +9,7 @@
     debug:
       msg: "given no is {{number}} is less than 10"
     when: number < 10  
+  - name: check no greater than equal 10
+    debug:
+      msg: "given no is {{number}} is greater than equal 10"
+    when: number >= 10  
