@@ -1,0 +1,33 @@
+- name: filters
+  hosts: localhost
+  tasks:
+  - name: print default value
+    ansible.builtin.debug:
+      msg: "the value {{team | default('mumbai') }}"
+- name: uppercase
+  hosts: localhost
+  vars:
+      team: "Mumbai"
+  tasks: 
+  - name: convert to upper
+  ansible.builtin.debug:
+      msg: {{team | upper }}" 
+
+- name: lowercase
+  hosts: localhost
+  vars:
+      team: "Mumbai"
+  tasks: 
+  - name: convert to upper
+  ansible.builtin.debug:
+      msg: {{team | lower }}"  
+
+- name: remove duplicates
+  hosts: localhost
+  vars:
+      team: [ 1, 2, 3, 4, 5, 2, 3,]
+  tasks: 
+  - name: convert to upper
+   ansible.builtin.debug:
+      msg: {{team | unique }}"  
+          

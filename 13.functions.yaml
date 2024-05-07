@@ -13,3 +13,5 @@
     debug:
       msg: "given no is {{number}} is greater than equal 10"
     when: number | int >= 10  
+
+    #ansible always takes arguments in string format to overcome we used filter(|)
