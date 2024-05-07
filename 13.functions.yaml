@@ -1,11 +1,11 @@
 - name: checking number
-  hosts: web
+  hosts: localhost
   vars_prompt:
   - name: number
     prompt: Enter number
     private: no
   tasks:
   - name: check no is less than 10
-    debug:
+    ansible.buitlin.debug:
       msg: "given no is {{number}} is less than 10"
     when: number < 10  
