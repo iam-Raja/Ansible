@@ -11,7 +11,7 @@
   tasks: 
   - name: convert to upper
   ansible.builtin.debug:
-      msg: {{team | upper }}" 
+      msg: "{{team | upper }}" 
 
 - name: lowercase
   hosts: localhost
@@ -20,7 +20,7 @@
   tasks: 
   - name: convert to upper
   ansible.builtin.debug:
-      msg: {{team | lower }}"  
+      msg: "{{team | lower }}"  
 
 - name: remove duplicates
   hosts: localhost
@@ -29,5 +29,5 @@
   tasks: 
   - name: convert to upper
    ansible.builtin.debug:
-      msg: {{team | unique }}"  
+      msg: "{{team | unique }}"  
           
