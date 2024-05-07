@@ -28,6 +28,6 @@
       team: [ 1, 2, 3, 4, 5, 2, 3,]
   tasks: 
   - name: convert to upper
-   ansible.builtin.debug:
+  ansible.builtin.debug:
       msg: "{{team | unique }}"  
           
