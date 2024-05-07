@@ -6,6 +6,6 @@
     private: no
   tasks:
   - name: check no is less than 10
-    ansible.buitlin.debug:
+    debug:
       msg: "given no is {{number}} is less than 10"
     when: number < 10  
