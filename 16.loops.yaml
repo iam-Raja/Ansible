@@ -1,4 +1,4 @@
-- name: loops
+- name: loops to install packages and delete at a time 
   hosts: localhost
   become: yes
   tasks:
