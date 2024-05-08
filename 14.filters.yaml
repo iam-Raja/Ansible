@@ -31,4 +31,13 @@
   - name: convert to upper
     ansible.builtin.debug:
       msg: "{{ team | unique }}"  
+
+- name: min and max
+  hosts: localhost
+  vars:
+    ages: [ 15, 25, 30 ]
+  tasks: 
+  - name: print min and max
+    ansible.builtin.debug:
+      msg: "max age :: {{ ages | max }}"       
           
