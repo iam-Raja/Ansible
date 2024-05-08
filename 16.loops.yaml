@@ -1,0 +1,14 @@
+- name: loops
+  hosts: loaclhost
+  become: yes
+  tasks:
+  - name: installing packages via loops
+    dnf:
+     name: {{item}}
+     state: latest
+    loop:
+    - mysql
+    - nginx 
+
+
+   
