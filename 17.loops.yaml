@@ -5,7 +5,6 @@
   - name: installing packages via loops
     dnf:
      name: "{{ item }}"
-     state: latest
     loop:
     - { name: 'mysql', state: 'latest'}
     - { name: 'nginx' , state: 'absent'}
