@@ -6,8 +6,8 @@
     dnf:
      name: "{{ item }}"
     loop:
-    - { name: 'mysql', state: 'latest'}
-    - { name: 'nginx' , state: 'absent'}
+    - { name: 'mysql', state: 'latest' }
+    - { name: 'nginx' , state: 'absent' }
      
 
 
