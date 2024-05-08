@@ -39,5 +39,22 @@
   tasks: 
   - name: print min and max
     ansible.builtin.debug:
-      msg: "max age :: {{ ages | max }} , min age :: {{ ages | min}}"       
+      msg: "max age :: {{ ages | max }} , min age :: {{ ages | min}}" 
+
+- name: converting dict to items
+  hosts: localhost
+  vars:
+    teams:
+      mumbai: rohit
+      hyd: cummins
+      rajsthan: sanju
+  tasks: 
+  - name: convert to dict2itemsr
+    ansible.builtin.debug:
+      msg: "before converting {{teams}}"
+  - name: converting dict2items
+    ansible.builtin.debug:
+      msg: "after converting {{ teams | dict2items }}"     
+      
+           
           
