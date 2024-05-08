@@ -1,5 +1,5 @@
 - name: loops
-  hosts: loaclhost
+  hosts: localhost
   become: yes
   tasks:
   - name: installing packages via loops
