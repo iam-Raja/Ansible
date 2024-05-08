@@ -49,7 +49,7 @@
       hyd: cummins
       rajsthan: sanju
   tasks: 
-  - name: convert to dict2itemsr
+  - name: convert to dict2itemsr #we can do reverse with filter items2dict
     ansible.builtin.debug:
       msg: "before converting {{teams}}"
   - name: converting dict2items

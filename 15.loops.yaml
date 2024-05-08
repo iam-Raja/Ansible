@@ -1,0 +1,10 @@
+- name: loops
+  hosts: localhost
+  tasks:
+  - name: print from loops
+    debug:
+     msg: "hello {{item}}"
+    loop: 
+    - linux
+    - doc
+    - k8's 
